@@ -1,0 +1,60 @@
+<div class="card">
+    <div class="card-header">
+        Editar Personaje
+    </div>
+    <div class="card-body">
+       
+        <form ngNativeValidate [formGroup]="FormularioPersonaje" (ngSubmit)="enviarDatos()">
+
+            <div class="mb-3">
+              <label for="" class="form-label">id_personaje:</label>
+              <input required type="text"
+                class="form-control" name="" formControlName="id_personaje" id="" aria-describedby="helpId" placeholder="Escribe el nombre del personaje">            </div>
+
+        
+                <div class="mb-3">
+                  <label for="" class="form-label">Familia:</label>
+                  <input required type="text"
+                    class="form-control" name="" formControlName="Familia" id="" aria-describedby="helpId" placeholder="Escribir correo">
+                                </div>
+                               
+                 <div class="mb-3">
+                 <label for="" class="form-label">Clan:</label>
+                     <input required type="text"
+                   class="form-control" name="" formControlName="Clan" id="" aria-describedby="helpId" placeholder="Escribe el nombre del personaje">            </div>
+                      
+                              
+                     <div class="mb-3">
+                     <label for="" class="form-label">Escuela:</label>
+                     <input required type="text"
+                      class="form-control" name="" formControlName="Escuela" id="" aria-describedby="helpId" placeholder="Escribir correo">
+                        </div>
+                                                     
+                        <div class="mb-3">
+                        <label for="" class="form-label">nombre:</label>
+                     <input required type="text"
+                 class="form-control" name="" formControlName="nombre" id="" aria-describedby="helpId" placeholder="Escribe el nombre del personaje">            </div>
+                                          
+                                                  
+                     <div class="mb-3">
+                    <label for="" class="form-label">Herencia:</label>
+                    <input required type="text"
+                     class="form-control" name="" formControlName="Herencia" id="" aria-describedby="helpId" placeholder="Escribir correo">
+                     </div>
+
+                     <div class="mb-3">
+                        <label for="" class="form-label">Destacar:</label>
+                        <input required type="text"
+                         class="form-control" name="" formControlName="Destacar" id="" aria-describedby="helpId" placeholder="Escribir correo">
+                         </div>
+        
+
+                <div class="btn-group" role="group" aria-label="Button group name">
+                    <button type="Submit" class="btn btn-warning">Modificar</button>
+                    <button type="button" routerLink="/listar-personaje/" class="btn btn-primary">Cancelar</button>
+                </div>
+            </form>
+
+    </div>
+   
+</div>

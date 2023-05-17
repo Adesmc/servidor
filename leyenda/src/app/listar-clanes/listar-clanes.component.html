@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Clanes</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Anillo</th>
+            <th scope="col">Habilidad</th>
+            <th scope="col">Saber</th>
+            <th scope="col">Bushido</th>
+            <th scope="col">Bushido Alto</th>
+            <th scope="col">Bushido Bajo</th>
+            <th scope="col">Cultura</th>
+            <th scope="col">Estatus</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Clan of Clanes; let iControl=index">
+            <td>{{Clan.Nombre}}</td>
+            <td>{{Clan.Anillo}}</td>
+            <td>{{Clan.Habilidad}}</td>
+            <td>{{Clan.Saber}}</td>
+            <td>{{Clan.Bushido}}</td>
+            <td>{{Clan.Bushido_alto}}</td>
+            <td>{{Clan.Bushido_bajo}}</td>
+            <td>{{Clan.Cultura}}</td>
+            <td>{{Clan.Estatus}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

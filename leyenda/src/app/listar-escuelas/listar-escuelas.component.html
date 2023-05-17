@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Escuelas</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Funcion</th>
+            <th scope="col">Funcion_secundaria</th>
+            <th scope="col">Funciona_Terciaria</th>
+            <th scope="col">Anillo</th>
+            <th scope="col">Habilidad</th>
+            <th scope="col">Lore</th>
+            <th scope="col">Honor</th>
+            <th scope="col">Tecnicas_dis</th>
+            <th scope="col">Numero_habilidad</th>
+
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Escuela of Escuela; let iControl=index">
+            <td>{{Escuela.Nombre}}</td>
+            <td>{{Escuela.Funcion}}</td>
+            <td>{{Escuela.Funcion_secundaria}}</td>
+            <td>{{Escuela.Funciona_Terciaria}}</td>
+            <td>{{Escuela.Anillo}}</td>
+            <td>{{Escuela.Habilidad}}</td>
+            <td>{{Escuela.Lore}}</td>
+            <td>{{Escuela.Honor}}</td>
+            <td>{{Escuela.Tecnicas_dis}}</td>
+            <td>{{Escuela.Numero_habilidad}}</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

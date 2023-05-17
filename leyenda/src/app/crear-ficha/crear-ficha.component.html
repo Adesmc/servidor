@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8" id="htmlData">
+        <table class="table table-bordered">
+          
+        </table>
+      </div>
+      <div>
+        <form action="generar_pdf.php" method="post">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" [(ngModel)]="nombre" class="form-control" placeholder="Nombre del personaje" for="floatingInput">
+<br><br>
+            <div class="col-sm-10">
+              <select name="Clanes" class="form-control" id="Clanes" [(ngModel)]="Clanes">
+                <option *ngFor="let Clan of Clan; let iControl=index">
+                  {{Clan.nombre}}
+                </option>
+              </select>
+            </div>
+            <button type="button" (click)="crearTabla()" class="btn btn-primary">Crear Tabla</button>
+          </form>
+
+            <div class="card-body" id="tabla-container" *ngIf="tablaCreada">
+              <table class="table table-primary">
+                  <thead>
+                      <tr>
+                          <th>Nombre</th>
+                          <th>Clan</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>{{ nombre }}</td>
+                          <td>{{ Clanes }}</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
+
+      </div>
+      
+    </div>
+  </div>

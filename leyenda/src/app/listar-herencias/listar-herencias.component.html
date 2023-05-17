@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Herencias</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Modificador</th>
+            <th scope="col">Otro_Efecto</th>
+            <th scope="col">Lore</th>
+
+
+          </tr>
+	
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let Herencia of Herencia; let iControl=index">
+            <td>{{Herencia.Nombre}}</td>
+            <td>{{Herencia.Modificador}}</td>
+            <td>{{Herencia.Otro_Efecto}}</td>
+            <td>{{Herencia.Lore}}</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

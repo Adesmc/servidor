@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Habilidades</h1>
+    </div>
+   
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Info</th>
+            <th scope="col">Agua</th>
+            <th scope="col">Aire</th>
+            <th scope="col">Fuego</th>
+            <th scope="col">Tierra</th>
+            <th scope="col">Vacio</th>
+
+
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let habilidades of habilidades; let iControl=index">
+            <td>{{habilidades.Nombre}}</td>
+            <td>{{habilidades.Categoria}}</td>
+            <td>{{habilidades.Info}}</td>
+            <td>{{habilidades.Agua}}</td>
+            <td>{{habilidades.Aire}}</td>
+            <td>{{habilidades.Fuego}}</td>
+            <td>{{habilidades.Tierra}}</td>
+            <td>{{habilidades.Vacio}}</td>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
