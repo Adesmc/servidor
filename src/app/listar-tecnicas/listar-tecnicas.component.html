@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Tecnicas</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Requisito</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Activacion</th>
+            <th scope="col">Uso</th>
+            <th scope="col">Oportunidad</th>
+            <th scope="col">Rango</th>
+            <th scope="col">Subcategoria</th>
+          </tr>
+
+          
+        </thead>
+        <tbody>
+          <tr *ngFor="let Tecnica of Tecnica; let iControl=index">
+            <td>{{Tecnica.Nombre}}</td>
+            <td>{{Tecnica.Categoria}}</td>
+            <td>{{Tecnica.Requisito}}</td>
+            <td>{{Tecnica.Descripcion}}</td>
+            <td>{{Tecnica.Activacion}}</td>
+            <td>{{Tecnica.Uso}}</td>
+            <td>{{Tecnica.Oportunidad}}</td>
+            <td>{{Tecnica.Rango}}</td>
+            <td>{{Tecnica.Subcategoria}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Trasfondo</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Lore</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Efecto</th>
+            <th scope="col">Anillo</th>
+
+          </tr>
+
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let Trasfondo of Trasfondo; let iControl=index">
+            <td>{{Trasfondo.Nombre}}</td>
+            <td>{{Trasfondo.Lore}}</td>
+            <td>{{Trasfondo.Tipo}}</td>
+            <td>{{Trasfondo.Efecto}}</td>
+            <td>{{Trasfondo.Anillo}}</td>
+
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

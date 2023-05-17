@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Destacar</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Anillo</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Destacar of Destacar; let iControl=index">
+            <td>{{Destacar.Nombre}}</td>
+            <td>{{Destacar.Anillo}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

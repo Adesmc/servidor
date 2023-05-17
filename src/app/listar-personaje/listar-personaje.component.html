@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">
+        
+    
+    </div>
+    
+    <div class="card-body">
+        <h1>Personajes</h1>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Clan</th>
+                    <th scope="col">Familia</th>
+                    <th scope="col">Escuela</th>
+                    <th scope="col">Destacar</th>
+                    <th scope="col">Herencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let personaje of Personaje; let iControl=index"> 
+                    <td> {{personaje.id_personaje}} </td>
+                    <td> {{personaje.Nombre}} </td>
+                    <td> {{personaje.Clan}} </td>
+                    <td> {{personaje.Familia}} </td>
+                    <td> {{personaje.Escuela}} </td>
+                    <td> {{personaje.Destacar}} </td>
+                    <td> {{personaje.Herencia}} </td>
+                    <td>
+                       <a class="btn btn-danger" (click)="BorrarRegistro(personaje.id_personaje,iControl)"  role="button">borar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>

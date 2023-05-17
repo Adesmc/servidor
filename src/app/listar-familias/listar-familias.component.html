@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h1>Familias</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Anillo</th>
+            <th scope="col">Riqueza</th>
+            <th scope="col">Info</th>
+            <th scope="col">Gloria</th>
+            <th scope="col">Clan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Familia of Familia; let iControl=index">
+            <td>{{Familia.Nombre}}</td>
+            <td>{{Familia.Anillo}}</td>
+            <td>{{Familia.Riqueza}}</td>
+            <td>{{Familia.Info}}</td>
+            <td>{{Familia.Gloria}}</td>
+            <td>{{Familia.Clan}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
